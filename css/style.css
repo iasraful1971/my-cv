@@ -14,7 +14,7 @@
     --fade: #7081b9;
     --mild: #8997bd;
     --footer: #212A4A;
-    --black: #600b1b;
+    --black: #060b1b;
     --twitter: #4ac7ec;
     --dribble: #ff5da0;
     --success: #1ecab8;
@@ -83,4 +83,134 @@ nav .inner button {
     color: var(--pure);
     font-size: 10px;
     border-radius: 4px;
+}
+
+
+/* hero section */
+section.profile {
+    background: var(--black);
+    display: flex;
+    align-items: center;
+    padding: 3rem;
+    margin-top: 60px;
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 25% 100%, 0 80%);
+    padding-bottom: 4rem;
+}
+
+section.profile .left {
+    display: flex;
+    flex: 2;
+    align-items: center;
+}
+
+section.profile .right {
+    flex: 1;
+}
+
+section.profile .left .cd-headline.loading-bar .cd-words-wrapper::after {
+    background: linear-gradient(to right, var(--secondary), var(--success));
+}
+
+section.profile .left p b {
+    padding-bottom: 1rem;
+    font-weight: 400;
+}
+
+section.profile .left h2 {
+    color: var(--fade);
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+section.profile .left p {
+    color: var(--mild);
+    font-size: 14px;
+
+}
+
+section.profile .left img {
+    width: 128px;
+    height: 128px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+section.profile .left .avatar {
+    position: relative;
+    margin-right: 2rem;
+}
+
+section.profile .left .avatar span {
+    position: absolute;
+    right: 4px;
+    bottom: 4px;
+    background: var(--info);
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--pure);
+    box-shadow: 0px 0px 20px 0 rgba(32, 41, 54, 0.5);
+    cursor: pointer;
+}
+
+section.profile .right ul.contact {
+    list-style: none;
+    margin-bottom: 1.6rem;
+
+}
+
+section.profile .right ul.contact li {
+    color: var(--ternary);
+    margin-bottom: 0.7rem;
+    font-size: 14px;
+}
+
+section.profile .right ul.contact li i {
+    font-size: 18px;
+    margin-right: 0.3rem;
+
+}
+
+section.profile .right .socials {
+    display: flex;
+    align-items: center;
+
+}
+
+section.profile .right .socials li {
+    list-style-type: none;
+    margin-right: 0.8rem;
+}
+
+section.profile .right .socials li a {
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    color: var(--pure);
+    line-height: 36px;
+    text-align: center;
+
+
+}
+
+section.profile .right .socials li:nth-child(1) a {
+    background-color: var(--secondary);
+}
+
+section.profile .right .socials li:nth-child(2) a {
+    background-color: var(--twitter);
+}
+
+section.profile .right .socials li:nth-child(3) a {
+    background-color: var(--dark-blue);
+
+}
+
+section.profile .right .socials li:nth-child(4) a {
+    background-color: var(--dark);
 }
