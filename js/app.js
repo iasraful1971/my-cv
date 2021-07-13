@@ -67,6 +67,55 @@ sectionObserver.observe(counterSection);
 
 
 
+// Slick Slider
+
 
 
 });
+$('.slider').slick({
+  // arrows: false,
+  // autoplay: true
+autoplay: true,
+// dots:true,
+arrows:false
+});
+
+
+
+
+
+
+
+//image filter
+
+var wrapper = $('.portfolio-wrapper');
+
+//Inisializatd of istope
+
+$wrapper.isotope({
+    filter : '*',
+    layoutMode : 'masonary',
+    animationOptions: {
+      duration: 750,
+      easing: 'linear'
+    }
+});
+
+let links = document.querySelectorAll('.tabs a');
+   links.forEach(link => {
+     let selector = link.dataset.filter;
+
+    link.addEventListener('click', function(e){
+      e.preventDefault();
+
+      $wrapper.isotope({
+        filter : 'selector',
+        layoutMode : 'masonary',
+        animationOptions: {
+          duration: 750,
+          easing: 'linear'
+        }
+    });
+      
+    });
+   });
