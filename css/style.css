@@ -211,12 +211,12 @@ section.profile .right .socials li:nth-child(2) a {
 }
 
 section.profile .right .socials li:nth-child(3) a {
-    background-color: var(--dark-blue);
+    background-color: var(--primary);
 
 }
 
 section.profile .right .socials li:nth-child(4) a {
-    background-color: var(--dark);
+    background-color: var(--dribble);
 }
 
 /* Utility section */
